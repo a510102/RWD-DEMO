@@ -1,0 +1,252 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h5{
+    font-family: 'Poppins', sans-serif;
+}
+.wrap{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.navbar{
+    padding: 3em;
+}
+
+.banner{
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner h3{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner p{
+    width: 40vw;
+}
+
+button{
+    background: hsl(322, 100%, 66%);
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    width: 300px;
+    font-size: 1.1rem;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 375px){
+    .wrap{
+        max-width: 375px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .navbar{
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-title img{
+        width: 150px;
+    }
+    .banner{
+        height: 80vh;
+    }
+
+    .banner h3{
+        font-size: 1.5rem;
+    }
+
+    .banner p {
+        width: 60vw;
+    }
+
+    button{
+        margin-top: 2rem;
+    }
+}
+
+.list  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.list img{
+    height: 100%;
+    width: 100%;
+}
+
+.list-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.list-content h2{
+    font-size: 4rem;
+}
+
+.list-content p{
+    color: rgb(116, 118, 119);
+}
+
+@media screen and (max-width: 375px) {
+    .list-content{
+        height: 60vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+section img, 
+section .content{
+width: 500px;}
+
+section h3 {
+    font-size: 1.5rem;
+}
+
+section p {
+    font-size: 0.8rem;
+    color: rgb(116, 118, 119);
+}
+
+section.top{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255), rgba(115, 115, 219, 0.664)) 
+    ,url(./images/bg-section-top-desktop-1.svg);
+}
+section.middle{
+   background-color: rgba(115, 115, 219, 0.671);
+}
+
+section.bottom{
+    background-image:
+    linear-gradient(to top, rgb(255, 255, 255), rgba(115, 115, 219, 0.664)) 
+    ,url(./images/bg-section-top-desktop-1.svg);
+}
+@media screen and (max-width: 375px ) {
+    section{
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        height: 60vh;
+        padding: 2rem;
+    }
+    section.top,
+    section.bottom{
+        flex-direction: column-reverse
+    }
+
+    section img, 
+    section .content{
+    width: 80vw;
+}
+}
+
+.coummunity{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coummunity h3{
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 375px) {
+    .coummunity{
+        height: 60vh;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+footer{
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    color: #fff;
+}
+
+footer .about,
+footer .connect{
+    width: 500px;
+}
+
+footer h5{
+    margin-bottom: 0.5rem;
+}
+
+footer p {
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width: 375px) {
+    footer{
+        flex-direction: column-reverse;
+        height: 60vh;
+    }
+    footer .about,
+    footer .connect{
+    width: 80vw;
+}
+}
+
+.connect-input{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.connect-input button{
+    font-size: 0.8em;
+    width: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.connect-input input{
+    width: 300px;
+    height: 40px;
+border-radius: 15px;}
+
+@media screen and (max-width: 375px) {
+    .connect-input{
+        flex-direction: column;
+    }
+    .connect-input button{
+        align-self: flex-end;
+        margin-top: 1rem;
+    }
+}
